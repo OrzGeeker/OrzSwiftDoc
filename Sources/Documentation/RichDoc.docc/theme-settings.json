@@ -1,0 +1,46 @@
+{
+  "theme": {
+    "color": {
+      "documentation-intro-fill": "rebeccapurple"
+    },
+    "typography": {
+      "html-font": "\"Comic Sans MS\", \"Comic Sans\", cursive",
+      "html-font-mono": "\"Courier New\", Courier, monospace"
+    },
+    "aside": {
+      "border-radius": "6px",
+      "border-style": "double",
+      "border-width": "3px"
+    },
+    "border-radius": "0",
+    "button": {
+      "border-radius": "8px",
+      "border-style": "solid",
+      "border-width": "2px"
+    },
+    "code": {
+      "border-radius": "2px",
+      "border-style": "dashed",
+      "border-width": "2px"
+    },
+    "tutorial-step": {
+      "border-radius": "12px"
+    },
+    "icons": {
+      "article": "/images/simple-box.svg"
+    }
+  },
+  "meta": {
+      "title": "Custom Title",
+  },
+  "features": {
+      "docs": {
+        "quickNavigation": {
+          "enable": true
+        },
+        "onThisPageNavigator": {
+          "disable": true
+        }
+      }
+    }
+}

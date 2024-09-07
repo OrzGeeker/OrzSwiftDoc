@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+#-*- coding: utf-8 -*-
+
+# 生成所有Target的文档
+# swift package generate-documentation
+
+repo_dir=$(git rev-parse --show-toplevel)
+repo_name=$(git remote get-url origin | xargs basename -s .git)
+
+package_path=$repo_dir
+doc_dir=$package_path/docs
+target_name=OrzSwiftDoc
+
+swift package                                   \
+    --package-path $package_path                \
+    --allow-writing-to-directory $doc_dir       \
+    generate-documentation                      \
+    --output-path $doc_dir                      \
+    --transform-for-static-hosting              \
+    --disable-indexing                          \
+    --hosting-base-path $repo_name
+
+
