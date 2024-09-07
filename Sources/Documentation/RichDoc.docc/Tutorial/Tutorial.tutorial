@@ -1,0 +1,29 @@
+@Tutorial(time: 20) {
+    @Intro(title: "简介") {
+        简介内容
+        
+        @Image(source: file, alt: "描述内容")
+    }
+    
+    @Section(title: "版块") {
+        @ContentAndMedia {
+            
+            内容和媒体
+            
+            @Image(source: file, alt: "描述内容")
+        }
+        
+        @Steps {
+            @Step {
+                步骤
+                
+                @Image(source: file, alt: "描述内容")
+            }
+            
+            @Step {
+                步骤
+                @Code(name: "代码", file: demo.swift)
+            }
+        }
+    }
+}

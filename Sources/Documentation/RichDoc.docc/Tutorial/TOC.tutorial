@@ -1,0 +1,17 @@
+@Tutorials(name: "交互式教程") {
+    @Intro(title: "简介") {
+        
+        简介内容
+        
+        @Image(source: file, alt: "描述内容")
+    }
+    
+    @Chapter(name: "章节") {
+        
+        章节内容
+        
+        @Image(source: file, alt: "描述内容")
+        
+        @TutorialReference(tutorial: "doc:Tutorial")
+    }
+}

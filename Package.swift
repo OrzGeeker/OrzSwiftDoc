@@ -1,27 +1,12 @@
 // swift-tools-version: 6.0
-// The swift-tools-version declares the minimum version of Swift required to build this package.
-
 import PackageDescription
-
+let name = "OrzSwiftDoc"
 let package = Package(
-    name: "OrzSwiftDoc",
-    products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
-        .library(
-            name: "OrzSwiftDoc",
-            targets: ["OrzSwiftDoc"]),
-    ],
+    name: name,
     dependencies: [
-      .package(url: "https://github.com/swiftlang/swift-docc-plugin.git", from: "1.4.2")  
+        .package(url: "https://github.com/swiftlang/swift-docc-plugin.git", from: "1.4.2")
     ],
     targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
-        .target(
-            name: "OrzSwiftDoc"),
-        .testTarget(
-            name: "OrzSwiftDocTests",
-            dependencies: ["OrzSwiftDoc"]
-        ),
+        .target(name: name, path: "Sources/Documentation"),
     ]
 )
