@@ -4,18 +4,9 @@
 repo_dir=$(git rev-parse --show-toplevel)
 package_path=$repo_dir
 
-# Preview Current Package's Target
-# target_name=OrzSwiftDoc
-# swift package                                               \
-#     --disable-sandbox                                       \
-#     --package-path $package_path                            \
-#     preview-documentation                                   \
-#     --target $target_name
-
-# Preview Product defined by one of your package's dependencies
 product_name=OrzSwiftDoc
-swift package                                               \
-    --disable-sandbox                                       \
-    --package-path $package_path                            \
-    preview-documentation                                   \
-    --product $product_name
+swift package                       \
+    --disable-sandbox               \
+    --package-path $package_path    \
+    preview-documentation
+    

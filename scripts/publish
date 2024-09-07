@@ -1,23 +1,12 @@
 #!/usr/bin/env bash
 #-*- coding: utf-8 -*-
 
-if [ -n "$(git status --porcelain)" ];then
-    echo not ready for publish docs!
-    exit -1
-fi
-
 # 生成所有Target的文档
 # swift package generate-documentation
-
-target_name=OrzSwiftDoc
 
 repo_dir=$(git rev-parse --show-toplevel)
 package_path=$repo_dir
 doc_dir=$package_path/docs
-
-if [ ! -d $doc_dir ]; then
-    git worktree add $doc_dir
-fi
 
 swift package                                   \
     --package-path $package_path                \
@@ -25,7 +14,7 @@ swift package                                   \
     generate-documentation                      \
     --output-path $doc_dir                      \
     --transform-for-static-hosting              \
-    --hosting-base-path $target_name            \
-    --disable-indexing                          \
-    --target $target_name 
+    --disable-indexing                          #\
+    # --hosting-base-path $target_name            
+
 
