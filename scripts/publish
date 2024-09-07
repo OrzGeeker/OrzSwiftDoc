@@ -5,6 +5,8 @@
 # swift package generate-documentation
 
 repo_dir=$(git rev-parse --show-toplevel)
+repo_name=$(git remote get-url origin | xargs basename -s .git)
+
 package_path=$repo_dir
 doc_dir=$package_path/docs
 target_name=OrzSwiftDoc
@@ -16,6 +18,6 @@ swift package                                   \
     --output-path $doc_dir                      \
     --transform-for-static-hosting              \
     --disable-indexing                          \
-    --hosting-base-path $target_name            
+    --hosting-base-path $repo_name
 
 
