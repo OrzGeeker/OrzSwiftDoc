@@ -3,14 +3,14 @@
         
         简介内容
         
-        @Image(source: file, alt: "描述内容")
+        @Image(source: alipay, alt: "描述内容")
     }
     
     @Chapter(name: "章节") {
         
         章节内容
         
-        @Image(source: file, alt: "描述内容")
+        @Image(source: alipay, alt: "描述内容")
         
         @TutorialReference(tutorial: "doc:Tutorial")
     }

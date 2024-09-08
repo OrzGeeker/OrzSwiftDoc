@@ -2,7 +2,7 @@
     @Intro(title: "简介") {
         简介内容
         
-        @Image(source: file, alt: "描述内容")
+        @Image(source: alipay, alt: "描述内容")
     }
     
     @Section(title: "版块") {
@@ -10,14 +10,14 @@
             
             内容和媒体
             
-            @Image(source: file, alt: "描述内容")
+            @Image(source: alipay, alt: "描述内容")
         }
         
         @Steps {
             @Step {
                 步骤
                 
-                @Image(source: file, alt: "描述内容")
+                @Image(source: alipay, alt: "描述内容")
             }
             
             @Step {

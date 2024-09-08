@@ -2,6 +2,12 @@
 
 Summary
 
+@Metadata {
+    @TechnologyRoot
+    @SupportedLanguage(swift)
+    @SupportedLanguage(objc)
+}
+
 ## Overview
 
 Text
@@ -9,3 +15,4 @@ Text
 ### Section header
 
 Text
+
