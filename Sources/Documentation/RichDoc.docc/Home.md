@@ -2,16 +2,7 @@
 
 @Metadata {
     @TitleHeading("教程")
-    @PageColor(green)
-    @PageKind(sampleCode)
-    @PageImage(purpose: icon, source: alipay)
-    @CallToAction(url:nil, label:"Hello")
     @DisplayName("Docc文档元素")
-    
-    @DocumentationExtension(mergeBehavior: override)
-    
-    @Redirected(from: "old/path/to/page")
-    @Redirected(from: "another/old/path/to/page")
 }
 
 ## 文档元素
