@@ -1,6 +1,6 @@
 # OrzSwiftDoc
 
-Write Documentation with Swift Docc, preview and publish on Github Pages
+Learn How to write documentation with Swift DocC, preview and publish on Github Pages
 
 - [Home Page](https://orzgeeker.github.io/OrzSwiftDoc/documentation/orzswiftdoc/)
 
